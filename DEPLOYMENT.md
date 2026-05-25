@@ -111,9 +111,9 @@ npm run start:craftsman
 ### Architecture Overview
 
 ```
-┌─────────────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────────────┐
 │                    Production Stack                      │
-├─────────────────────────────────────────────────────────┤
+├──────────────────────────────────────────────────────────┤
 │                                                          │
 │  Frontend (Vercel)                                       │
 │      ↓                                                   │
@@ -121,13 +121,13 @@ npm run start:craftsman
 │      ↓                                                   │
 │  Load Balancer                                           │
 │      ↓                                                   │
-│  Backend Servers (AWS (EC2/ECS))                        │
+│  Backend Servers (AWS (EC2/ECS))                         │
 │      ↓                                                   │
 │  MongoDB Atlas (Replica Set)                             │
 │  Redis Cloud                                             │
 │  Cloudinary                                              │
 │                                                          │
-└─────────────────────────────────────────────────────────┘
+└──────────────────────────────────────────────────────────┘
 ```
 
 ### 1. Database Setup (MongoDB Atlas)
