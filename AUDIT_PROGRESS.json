@@ -1,0 +1,3762 @@
+{
+  "last_updated": "2026-08-01T07:01:39.859Z",
+  "total_files": 538,
+  "sections": {
+    "root_docs": [
+      ".gitignore",
+      "API_DOCUMENTATION.md",
+      "ARCHITECTURE.md",
+      "CODE_SAMPLES.md",
+      "DEPLOYMENT.md",
+      "FEATURES.md",
+      "README.md",
+      "SKILLS.md"
+    ],
+    "backend_config": [
+      "codalina-backend/config/challengeMulter.js",
+      "codalina-backend/config/chatMediaMulter.js",
+      "codalina-backend/config/constants.js",
+      "codalina-backend/config/db.js",
+      "codalina-backend/config/index.js",
+      "codalina-backend/config/marketMulter.js",
+      "codalina-backend/config/multer.js",
+      "codalina-backend/config/quickPostMulter.js",
+      "codalina-backend/config/redis.js",
+      "codalina-backend/config/submissionMulter.js"
+    ],
+    "backend_middlewares": [
+      "codalina-backend/middlewares/authMiddleware.js",
+      "codalina-backend/middlewares/rateLimiter.js",
+      "codalina-backend/middlewares/securityMiddleware.js",
+      "codalina-backend/middlewares/trackMiddleware.js",
+      "codalina-backend/middlewares/validate.js",
+      "codalina-backend/middlewares/verifyAccessToken.js"
+    ],
+    "backend_models": [
+      "codalina-backend/models/Artifact.model.js",
+      "codalina-backend/models/AuditLog.model.js",
+      "codalina-backend/models/Challenge.model.js",
+      "codalina-backend/models/Chat.model.js",
+      "codalina-backend/models/Codex.model.js",
+      "codalina-backend/models/CollaborationRoom.model.js",
+      "codalina-backend/models/Comment.model.js",
+      "codalina-backend/models/CommunityTask.model.js",
+      "codalina-backend/models/Contract.model.js",
+      "codalina-backend/models/CraftsmanProfile.model.js",
+      "codalina-backend/models/Discussion.model.js",
+      "codalina-backend/models/Event.js",
+      "codalina-backend/models/Follow.model.js",
+      "codalina-backend/models/FollowHistory.model.js",
+      "codalina-backend/models/Interaction.model.js",
+      "codalina-backend/models/Job.model.js",
+      "codalina-backend/models/MarketBanner.model.js",
+      "codalina-backend/models/MarketCategory.model.js",
+      "codalina-backend/models/MarketConfig.model.js",
+      "codalina-backend/models/MarketOrder.model.js",
+      "codalina-backend/models/MarketOrderItem.model.js",
+      "codalina-backend/models/MarketProcurementRun.model.js",
+      "codalina-backend/models/MarketProduct.model.js",
+      "codalina-backend/models/MarketWholesaler.model.js",
+      "codalina-backend/models/MarketWholesalerTransaction.model.js",
+      "codalina-backend/models/Message.model.js",
+      "codalina-backend/models/Notification.model.js",
+      "codalina-backend/models/Payout.model.js",
+      "codalina-backend/models/PlatformProfile.model.js",
+      "codalina-backend/models/Post.model.js",
+      "codalina-backend/models/PredictiveAnalytics.model.js",
+      "codalina-backend/models/RefreshToken.model.js",
+      "codalina-backend/models/Resource.model.js",
+      "codalina-backend/models/Sale.model.js",
+      "codalina-backend/models/Session.js",
+      "codalina-backend/models/SocialActivity.model.js",
+      "codalina-backend/models/TokenTransaction.model.js",
+      "codalina-backend/models/Transaction.model.js",
+      "codalina-backend/models/User.model.js",
+      "codalina-backend/models/UserJourney.model.js",
+      "codalina-backend/models/VerificationRequest.model.js",
+      "codalina-backend/models/Visitor.js"
+    ],
+    "backend_controllers": [
+      "codalina-backend/controllers/authController.js",
+      "codalina-backend/controllers/chatController.js",
+      "codalina-backend/controllers/imageUploadController.js",
+      "codalina-backend/controllers/marketBannerController.js",
+      "codalina-backend/controllers/marketCategoryController.js",
+      "codalina-backend/controllers/marketConfigController.js",
+      "codalina-backend/controllers/marketOrderController.js",
+      "codalina-backend/controllers/marketProcurementController.js",
+      "codalina-backend/controllers/marketProductController.js",
+      "codalina-backend/controllers/marketWholesalerController.js",
+      "codalina-backend/controllers/notificationController.js",
+      "codalina-backend/controllers/oauthController.js",
+      "codalina-backend/controllers/tokenController.js",
+      "codalina-backend/controllers/userController.js",
+      "codalina-backend/controllers/verificationController.js",
+      "codalina-backend/controllers/walletController.js"
+    ],
+    "backend_routes": [
+      "codalina-backend/routes/analytics.js",
+      "codalina-backend/routes/artifacts.js",
+      "codalina-backend/routes/authRoutes.js",
+      "codalina-backend/routes/chatRoutes.js",
+      "codalina-backend/routes/devlogRoutes.js",
+      "codalina-backend/routes/imageUploadRoutes.js",
+      "codalina-backend/routes/marketRoutes.js",
+      "codalina-backend/routes/notificationRoutes.js",
+      "codalina-backend/routes/oauthRoutes.js",
+      "codalina-backend/routes/saleRoutes.js",
+      "codalina-backend/routes/tokenRoutes.js",
+      "codalina-backend/routes/trackRoutes.js",
+      "codalina-backend/routes/userRoutes.js",
+      "codalina-backend/routes/verificationRoutes.js",
+      "codalina-backend/routes/walletRoutes.js"
+    ],
+    "backend_queues_services": [
+      "codalina-backend/queues/chatMediaQueue.js",
+      "codalina-backend/queues/chatMessageQueue.js",
+      "codalina-backend/queues/index.js",
+      "codalina-backend/queues/notificationQueue.js",
+      "codalina-backend/services/auth.service.js",
+      "codalina-backend/services/cloudinary.js",
+      "codalina-backend/services/email.service.js",
+      "codalina-backend/services/fileSystem.js",
+      "codalina-backend/services/localFileSystem.js",
+      "codalina-backend/services/SchemaRegistryService.js"
+    ],
+    "backend_utils": [
+      "codalina-backend/utils/amountParser.js",
+      "codalina-backend/utils/AppError.js",
+      "codalina-backend/utils/authLimiter.js",
+      "codalina-backend/utils/cache.js",
+      "codalina-backend/utils/cleanupTokens.js",
+      "codalina-backend/utils/enhancedFileValidator.js",
+      "codalina-backend/utils/fastValidator.js",
+      "codalina-backend/utils/fileValidator.js",
+      "codalina-backend/utils/generateUsername.js",
+      "codalina-backend/utils/logger.js",
+      "codalina-backend/utils/normalizeEmail.js",
+      "codalina-backend/utils/notificationHelper.js",
+      "codalina-backend/utils/redisClient.js",
+      "codalina-backend/utils/socketManager.js",
+      "codalina-backend/utils/telemetryBuffer.js"
+    ],
+    "backend_scripts_main": [
+      "codalina-backend/.env",
+      "codalina-backend/.gitignore",
+      "codalina-backend/cat-log.txt",
+      "codalina-backend/check-admins.js",
+      "codalina-backend/check_db.js",
+      "codalina-backend/craftsmen/chatMediaWorker.js",
+      "codalina-backend/craftsmen/chatMessageWorker.js",
+      "codalina-backend/craftsmen/index.js",
+      "codalina-backend/craftsmen/notificationWorker.js",
+      "codalina-backend/craftsmen/profileImageWorker.js",
+      "codalina-backend/debug_images.js",
+      "codalina-backend/dev.db",
+      "codalina-backend/docs/VIEW_HISTORY_FIX.md",
+      "codalina-backend/docs/VIEW_TRACKING_SYSTEM.md",
+      "codalina-backend/extractWorking.js",
+      "codalina-backend/fix-demo-titles.js",
+      "codalina-backend/fix_earnings_atlas.js",
+      "codalina-backend/get_admin.cjs",
+      "codalina-backend/get_admin.js",
+      "codalina-backend/list_collections.js",
+      "codalina-backend/package.json",
+      "codalina-backend/practiceserver.js",
+      "codalina-backend/prisma.config.ts",
+      "codalina-backend/remove_h1_title_script.mjs",
+      "codalina-backend/rename.cjs",
+      "codalina-backend/rename2.cjs",
+      "codalina-backend/reset_admin.cjs",
+      "codalina-backend/run-all.js",
+      "codalina-backend/scripts/addPerformanceIndexes.js",
+      "codalina-backend/scripts/addSearchIndexes.js",
+      "codalina-backend/scripts/check-cat.js",
+      "codalina-backend/scripts/checkCardShapes.js",
+      "codalina-backend/scripts/checkViewHistory.js",
+      "codalina-backend/scripts/cleanupLegacyArrays.js",
+      "codalina-backend/scripts/cleanup_search_spam.mjs",
+      "codalina-backend/scripts/clean_search.mjs",
+      "codalina-backend/scripts/deleteDemoData.js",
+      "codalina-backend/scripts/diagnose.mjs",
+      "codalina-backend/scripts/diagnose2.mjs",
+      "codalina-backend/scripts/diagnose_search.mjs",
+      "codalina-backend/scripts/fix-password.js",
+      "codalina-backend/scripts/fix404Image.js",
+      "codalina-backend/scripts/fixMissingImages.js",
+      "codalina-backend/scripts/generate-usernames.js",
+      "codalina-backend/scripts/migrate-redis-url.js",
+      "codalina-backend/scripts/migrateArrays.js",
+      "codalina-backend/scripts/migrateCardShapes.js",
+      "codalina-backend/scripts/patch-ioredis-instantiations.js",
+      "codalina-backend/scripts/patch-ioredis.js",
+      "codalina-backend/scripts/patch-redis-connections.js",
+      "codalina-backend/scripts/patch-workers.js",
+      "codalina-backend/scripts/README.md",
+      "codalina-backend/scripts/refactor-workers.js",
+      "codalina-backend/scripts/repair-redis.js",
+      "codalina-backend/scripts/reset-attempts.js",
+      "codalina-backend/scripts/resetUserAccount.js",
+      "codalina-backend/scripts/seed-audio-categories.js",
+      "codalina-backend/scripts/seed-craftsman.js",
+      "codalina-backend/scripts/seedDemoData.js",
+      "codalina-backend/scripts/seedMultipleCraftsmen.cjs",
+      "codalina-backend/scripts/seedSuperUser.js",
+      "codalina-backend/scripts/seo-bulk-update.js",
+      "codalina-backend/scripts/test-redis-options.js",
+      "codalina-backend/scripts/test-redis-url.js",
+      "codalina-backend/scripts/testAPI.js",
+      "codalina-backend/scripts/testNotifications.js",
+      "codalina-backend/scripts/testOptimizations.js",
+      "codalina-backend/scripts/testViewHistory.js",
+      "codalina-backend/scripts/trainMLModels.js",
+      "codalina-backend/scripts/wipeData.js",
+      "codalina-backend/server.js",
+      "codalina-backend/test-chat-routes.js",
+      "codalina-backend/test-db.js",
+      "codalina-backend/test.js",
+      "codalina-backend/test_cats.js",
+      "codalina-backend/test_sanitize.mjs",
+      "codalina-backend/test_sanitize_full.mjs",
+      "codalina-backend/update_excerpts.js",
+      "codalina-backend/uploads/market/market_1784994104390_o424bg9bz.jpg",
+      "codalina-backend/validation/authValidation.js",
+      "codalina-backend/validation/craftsmanValidation.js",
+      "codalina-backend/validation/trackSchemas.js"
+    ],
+    "frontend_config": [
+      "codalina-frontend/.env.local",
+      "codalina-frontend/.eslintrc.json",
+      "codalina-frontend/.gitignore",
+      "codalina-frontend/categories.json",
+      "codalina-frontend/cleanup-urls.js",
+      "codalina-frontend/constants/cardShapes.js",
+      "codalina-frontend/constants/features.js",
+      "codalina-frontend/eslint.config.mjs",
+      "codalina-frontend/fixSockets.js",
+      "codalina-frontend/jsconfig.json",
+      "codalina-frontend/middleware.js",
+      "codalina-frontend/next.config.mjs",
+      "codalina-frontend/package.json",
+      "codalina-frontend/postcss.config.js",
+      "codalina-frontend/README.md",
+      "codalina-frontend/repair-admin-syntax.js",
+      "codalina-frontend/repair-envs.js",
+      "codalina-frontend/repair-syntax.js",
+      "codalina-frontend/replace_loaders.js",
+      "codalina-frontend/scripts/apply-optimizations.js",
+      "codalina-frontend/tailwind.config.js",
+      "codalina-frontend/topic.md"
+    ],
+    "frontend_hooks_context": [
+      "codalina-frontend/context/LanguageContext.jsx",
+      "codalina-frontend/context/ThemeContext.jsx",
+      "codalina-frontend/context/UserContext.jsx",
+      "codalina-frontend/hooks/useDebounce.js",
+      "codalina-frontend/hooks/useFavorites.js",
+      "codalina-frontend/hooks/useShare.js"
+    ],
+    "frontend_utils": [
+      "codalina-frontend/utils/AdvancedTracker.js",
+      "codalina-frontend/utils/animations.js",
+      "codalina-frontend/utils/api.js",
+      "codalina-frontend/utils/bdData.js",
+      "codalina-frontend/utils/blogExport.js",
+      "codalina-frontend/utils/DataExport.js",
+      "codalina-frontend/utils/generateInvoice.js",
+      "codalina-frontend/utils/jwt.js",
+      "codalina-frontend/utils/optimizeImage.js",
+      "codalina-frontend/utils/socket.js",
+      "codalina-frontend/utils/suspenseCache.js",
+      "codalina-frontend/utils/TrackerEngine.js",
+      "codalina-frontend/utils/translations.js",
+      "codalina-frontend/utils/visitor.js",
+      "codalina-frontend/utils/webrtcManager.js"
+    ],
+    "frontend_app_pages": [
+      "codalina-frontend/app/(dashboard)/analytics/page.js",
+      "codalina-frontend/app/(dashboard)/cart/page.js",
+      "codalina-frontend/app/(dashboard)/chat/page.js",
+      "codalina-frontend/app/(dashboard)/checkout/page.js",
+      "codalina-frontend/app/(dashboard)/layout.js",
+      "codalina-frontend/app/(dashboard)/legal/page.jsx",
+      "codalina-frontend/app/(dashboard)/orders/[id]/page.js",
+      "codalina-frontend/app/(dashboard)/page.js",
+      "codalina-frontend/app/(dashboard)/privacy/page.js",
+      "codalina-frontend/app/(dashboard)/product/[id]/page.js",
+      "codalina-frontend/app/(dashboard)/shop/page.jsx",
+      "codalina-frontend/app/(dashboard)/sitemap/page.jsx",
+      "codalina-frontend/app/(dashboard)/terms/page.js",
+      "codalina-frontend/app/(dashboard)/u/[username]/page.js",
+      "codalina-frontend/app/(dashboard)/warranty/page.js",
+      "codalina-frontend/app/about/page.js",
+      "codalina-frontend/app/admin/market/banners/page.js",
+      "codalina-frontend/app/admin/market/categories/page.js",
+      "codalina-frontend/app/admin/market/featured/page.jsx",
+      "codalina-frontend/app/admin/market/layout.js",
+      "codalina-frontend/app/admin/market/orders/page.js",
+      "codalina-frontend/app/admin/market/page.js",
+      "codalina-frontend/app/admin/market/popular/page.jsx",
+      "codalina-frontend/app/admin/market/procurement/page.js",
+      "codalina-frontend/app/admin/market/products/page.js",
+      "codalina-frontend/app/admin/market/promotions/page.js",
+      "codalina-frontend/app/admin/market/wholesaler/page.js",
+      "codalina-frontend/app/admin/messages/page.jsx",
+      "codalina-frontend/app/admin/page.jsx",
+      "codalina-frontend/app/admin/users/[id]/page.jsx",
+      "codalina-frontend/app/admin/verification/page.jsx",
+      "codalina-frontend/app/admin/verification/[id]/page.jsx",
+      "codalina-frontend/app/api/ai/chat/route.js",
+      "codalina-frontend/app/api/ai/generate/route.js",
+      "codalina-frontend/app/auth/callback/page.jsx",
+      "codalina-frontend/app/auth/forgot-password/page.jsx",
+      "codalina-frontend/app/auth/login/layout.jsx",
+      "codalina-frontend/app/auth/login/page.jsx",
+      "codalina-frontend/app/auth/register/page.js",
+      "codalina-frontend/app/auth/reset-password/page.jsx",
+      "codalina-frontend/app/auth/verify-email/page.jsx",
+      "codalina-frontend/app/editor-fonts.css",
+      "codalina-frontend/app/favicon.ico",
+      "codalina-frontend/app/globals.css",
+      "codalina-frontend/app/inbox/page.js",
+      "codalina-frontend/app/layout.js",
+      "codalina-frontend/app/robots.js",
+      "codalina-frontend/app/scan/layout.js",
+      "codalina-frontend/app/scan/page.js",
+      "codalina-frontend/app/sitemap.js",
+      "codalina-frontend/app/user/no-access/page.js"
+    ],
+    "frontend_components": [
+      "codalina-frontend/components/AboutComponents/AboutMain.jsx",
+      "codalina-frontend/components/admin/MarketPromotionsForm.jsx",
+      "codalina-frontend/components/AdminComponents/AccountTypeStats.jsx",
+      "codalina-frontend/components/AdminComponents/AllCountriesBarChart.jsx",
+      "codalina-frontend/components/AdminComponents/LastLoginTable.jsx",
+      "codalina-frontend/components/AdminComponents/LiveEvents.jsx",
+      "codalina-frontend/components/AdminComponents/NewVsRepeated.jsx",
+      "codalina-frontend/components/AdminComponents/PagePopularityDetails.jsx",
+      "codalina-frontend/components/AdminComponents/PagePopularitySmaller.jsx",
+      "codalina-frontend/components/AdminComponents/PieChartArtifact.jsx",
+      "codalina-frontend/components/AdminComponents/ProjectDisputes.jsx",
+      "codalina-frontend/components/AdminComponents/ReferrerStatsChart.jsx",
+      "codalina-frontend/components/AdminComponents/Task/TaskLayout.jsx",
+      "codalina-frontend/components/AdminComponents/test.jsx",
+      "codalina-frontend/components/AdminComponents/UnifiedAdminDashboard.jsx",
+      "codalina-frontend/components/AdminComponents/UserDirectory.jsx",
+      "codalina-frontend/components/AdminComponents/UserIntelligenceHub.jsx",
+      "codalina-frontend/components/AdminComponents/VerificationRequests.jsx",
+      "codalina-frontend/components/AdminComponents/VisitorAccountPieChart.jsx",
+      "codalina-frontend/components/AdminComponents/VisitorDevicePieChart.jsx",
+      "codalina-frontend/components/AIEnhanceButton.jsx",
+      "codalina-frontend/components/Auth/AuthContainer.jsx",
+      "codalina-frontend/components/Auth/SocialAuth.jsx",
+      "codalina-frontend/components/Background.jsx",
+      "codalina-frontend/components/BetaBanner.jsx",
+      "codalina-frontend/components/Buttons/SignInButton.jsx",
+      "codalina-frontend/components/Buttons/SignUpButton.jsx",
+      "codalina-frontend/components/Card/card.jsx",
+      "codalina-frontend/components/Card/HomeArtifact.jsx",
+      "codalina-frontend/components/Card/maincar.jsx",
+      "codalina-frontend/components/Card/ProfileCard.jsx",
+      "codalina-frontend/components/Card/ProjectCard.jsx",
+      "codalina-frontend/components/ClickedButtonGradient.jsx",
+      "codalina-frontend/components/dashboard/analytics/CreatorAnalytics.jsx",
+      "codalina-frontend/components/dashboard/AuthenticatedHome.jsx",
+      "codalina-frontend/components/dashboard/cards/ClassicExploreCard.jsx",
+      "codalina-frontend/components/dashboard/cards/CraftsmanHoverCard.jsx",
+      "codalina-frontend/components/dashboard/cards/PostCard.jsx",
+      "codalina-frontend/components/dashboard/cards/SavedItemCard.jsx",
+      "codalina-frontend/components/dashboard/chat/CallInterface.jsx",
+      "codalina-frontend/components/dashboard/chat/ChatModal.jsx",
+      "codalina-frontend/components/dashboard/chat/ChatSidebar.jsx",
+      "codalina-frontend/components/dashboard/chat/ChatWindow.jsx",
+      "codalina-frontend/components/dashboard/chat/DraggableResizableWindow.jsx",
+      "codalina-frontend/components/dashboard/comments/AdvancedCommentSection.jsx",
+      "codalina-frontend/components/dashboard/community/ActivityFeed.jsx",
+      "codalina-frontend/components/dashboard/community/CollaborationRooms.jsx",
+      "codalina-frontend/components/dashboard/community/CommunityChat.jsx",
+      "codalina-frontend/components/dashboard/community/CommunityMain.jsx",
+      "codalina-frontend/components/dashboard/community/CreateDiscussionModal.jsx",
+      "codalina-frontend/components/dashboard/community/CreatePostModal.jsx",
+      "codalina-frontend/components/dashboard/community/CreatorDiscovery.jsx",
+      "codalina-frontend/components/dashboard/community/DiscussionChat.jsx",
+      "codalina-frontend/components/dashboard/community/DiscussionChatNew.jsx",
+      "codalina-frontend/components/dashboard/community/ResourceLibrary.jsx",
+      "codalina-frontend/components/dashboard/community/TaskBoard.jsx",
+      "codalina-frontend/components/dashboard/explore/ExploreDashboard.jsx",
+      "codalina-frontend/components/dashboard/explore/ExploreFeed.jsx",
+      "codalina-frontend/components/dashboard/explore/ExploreRightPanel.jsx",
+      "codalina-frontend/components/dashboard/FeedbackModal.jsx",
+      "codalina-frontend/components/dashboard/GlassNavbar.jsx",
+      "codalina-frontend/components/dashboard/GlobalSocketListener.jsx",
+      "codalina-frontend/components/dashboard/market/MarketClientView.jsx",
+      "codalina-frontend/components/dashboard/market/MarketFooter.jsx",
+      "codalina-frontend/components/dashboard/market/MarketNavbar.jsx",
+      "codalina-frontend/components/dashboard/market/MarketSEOContent.jsx",
+      "codalina-frontend/components/dashboard/market/MobileMarketBottomNav.jsx",
+      "codalina-frontend/components/dashboard/market/WhyChooseUs.jsx",
+      "codalina-frontend/components/dashboard/modals/CraftsmanProfileModal.jsx",
+      "codalina-frontend/components/dashboard/modals/MentorshipBookingModal.jsx",
+      "codalina-frontend/components/dashboard/modals/SaveNoteModal.jsx",
+      "codalina-frontend/components/dashboard/modals/UserOnboardingModal.jsx",
+      "codalina-frontend/components/dashboard/navbar/SearchSuggestions.jsx",
+      "codalina-frontend/components/dashboard/NotificationDropdown.jsx",
+      "codalina-frontend/components/dashboard/notifications/NotificationModal.jsx",
+      "codalina-frontend/components/dashboard/RightSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/AchievementsSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/ArtifactRightSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/ArtifactsListSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/ChallengeCreateSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/ChallengeDetailsSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/ChallengesSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/ChallengeSubmitSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/CodexListSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/CodexRightSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/CraftsmanSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/DevlogRightSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/DevlogsListSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/ExploreSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/JobDetailSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/JobTalentRightSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/ManageChallengesSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/ManageJobsSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/PostJobSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/ProposalDetailSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/ProposalsSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/VerifySidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/WalletRightSidebar.jsx",
+      "codalina-frontend/components/dashboard/sidebar/WorkspaceSidebar.jsx",
+      "codalina-frontend/components/dashboard/Sidebar.jsx",
+      "codalina-frontend/components/dashboard/TieredVerification.jsx",
+      "codalina-frontend/components/dashboard/ui/DiscussionBadges.jsx",
+      "codalina-frontend/components/dashboard/VerificationBanner.jsx",
+      "codalina-frontend/components/dashboard/VerificationForm.jsx",
+      "codalina-frontend/components/dashboard/ViewToolbar.jsx",
+      "codalina-frontend/components/dashboard/{08B81150-9B90-48C6-AB85-212C3A8614AA}.png",
+      "codalina-frontend/components/DashboardComponents/AnalyticsModal.jsx",
+      "codalina-frontend/components/DashboardComponents/ArtifactAnalyticsModal.jsx",
+      "codalina-frontend/components/DashboardComponents/BecomePatronModal.jsx",
+      "codalina-frontend/components/DashboardComponents/ChallengeDetailsModal.jsx",
+      "codalina-frontend/components/DashboardComponents/CraftsmanAccountModal.jsx",
+      "codalina-frontend/components/DashboardComponents/CraftsmanArtifactsGrid.jsx",
+      "codalina-frontend/components/DashboardComponents/CraftsmanDashboard.jsx",
+      "codalina-frontend/components/DashboardComponents/CraftsmanProfileModal.jsx",
+      "codalina-frontend/components/DashboardComponents/CreateCraftsmanAccount.jsx",
+      "codalina-frontend/components/DashboardComponents/DashboardMain.jsx",
+      "codalina-frontend/components/DashboardComponents/DashboardModals.jsx",
+      "codalina-frontend/components/DashboardComponents/DashboardWidgets.jsx",
+      "codalina-frontend/components/DashboardComponents/ImageUploadModal.jsx",
+      "codalina-frontend/components/DashboardComponents/PatronDashboard.jsx",
+      "codalina-frontend/components/DashboardComponents/PlatformDashboard.jsx",
+      "codalina-frontend/components/DashboardComponents/PostAnalyticsModal.jsx",
+      "codalina-frontend/components/DashboardComponents/ProfileModal.jsx",
+      "codalina-frontend/components/DashboardComponents/SettingsModal.jsx",
+      "codalina-frontend/components/DashboardComponents/{E58D8B53-B89D-4D90-85E9-B815AB4327BE}.png",
+      "codalina-frontend/components/DashboardComponents/{F971547E-CD74-4121-9D2A-7F526CAB1D6B}.png",
+      "codalina-frontend/components/DashboardComponents/{FC46394F-B442-46A2-8A97-521402F3D84E}.png",
+      "codalina-frontend/components/DemoCard/DemoCard.jsx",
+      "codalina-frontend/components/FeaturedProfiles.jsx",
+      "codalina-frontend/components/FeaturedRow.jsx",
+      "codalina-frontend/components/FolderSelector.js",
+      "codalina-frontend/components/FolderSelector.jsx",
+      "codalina-frontend/components/Form/Devlog/BasicsSection.jsx",
+      "codalina-frontend/components/Form/Devlog/LinksSection.jsx",
+      "codalina-frontend/components/Form/Devlog/MetadataSection.jsx",
+      "codalina-frontend/components/Form/Devlog/MilestonesSection.jsx",
+      "codalina-frontend/components/Form/Devlog/TimelineSection.jsx",
+      "codalina-frontend/components/Form/ProjectUploadForm.jsx",
+      "codalina-frontend/components/Form/RegisterForm.jsx",
+      "codalina-frontend/components/Form/RegisterRevenueCard.jsx",
+      "codalina-frontend/components/Form/UploadForm.jsx",
+      "codalina-frontend/components/Form.jsx",
+      "codalina-frontend/components/GlobalTracker.jsx",
+      "codalina-frontend/components/GlobalTransitionLoader.jsx",
+      "codalina-frontend/components/HomeComponents/CategoryPills.jsx",
+      "codalina-frontend/components/HomeComponents/ContentCard.jsx",
+      "codalina-frontend/components/HomeComponents/DribbbleGrid.jsx",
+      "codalina-frontend/components/HomeComponents/HeroSection.jsx",
+      "codalina-frontend/components/HomeComponents/HomeMain.jsx",
+      "codalina-frontend/components/HomeComponents/Navbar.jsx",
+      "codalina-frontend/components/HomeComponents/RoadMap.jsx",
+      "codalina-frontend/components/HomeComponents/Sidebar.jsx",
+      "codalina-frontend/components/HomeComponents/TopRightIcons.jsx",
+      "codalina-frontend/components/HomeComponents/VideoCard.jsx",
+      "codalina-frontend/components/InboxComponents/InboxMain.jsx",
+      "codalina-frontend/components/InnerDiv.jsx",
+      "codalina-frontend/components/Input/CheckBox.jsx",
+      "codalina-frontend/components/Input/SocialButtons.jsx",
+      "codalina-frontend/components/InteractiveCharts.jsx",
+      "codalina-frontend/components/landing/CTA.jsx",
+      "codalina-frontend/components/landing/Features.jsx",
+      "codalina-frontend/components/landing/Footer.jsx",
+      "codalina-frontend/components/landing/Hero.jsx",
+      "codalina-frontend/components/landing/LandingNavbar.jsx",
+      "codalina-frontend/components/landing/LandingPage.jsx",
+      "codalina-frontend/components/landing/Testimonials.jsx",
+      "codalina-frontend/components/Layout.jsx",
+      "codalina-frontend/components/LiveAnalyticsCards.jsx",
+      "codalina-frontend/components/MainCursor.jsx",
+      "codalina-frontend/components/modals/CraftsmanOnboardingModal.jsx",
+      "codalina-frontend/components/navigation/MobileBottomNav.jsx",
+      "codalina-frontend/components/NotificationsComponents/NotificationsMain.jsx",
+      "codalina-frontend/components/Onboarding/OnboardingWizard.jsx",
+      "codalina-frontend/components/orders/OrdersList.jsx",
+      "codalina-frontend/components/ProfileComponents/PublicProfile.backup.jsx",
+      "codalina-frontend/components/ProfileComponents/PublicProfile.jsx",
+      "codalina-frontend/components/salesChart.jsx",
+      "codalina-frontend/components/SearchComponents/SearchMain.jsx",
+      "codalina-frontend/components/seo/JsonLd.jsx",
+      "codalina-frontend/components/ShowOff/ButtonShowOff.jsx",
+      "codalina-frontend/components/ThemeToggle.jsx",
+      "codalina-frontend/components/TrackerPatron.jsx",
+      "codalina-frontend/components/ui/AppleSpinner.jsx",
+      "codalina-frontend/components/ui/AuthGuardModal.jsx",
+      "codalina-frontend/components/ui/AuthRequired.jsx",
+      "codalina-frontend/components/ui/CameraCapture.jsx",
+      "codalina-frontend/components/ui/CustomSelect.jsx",
+      "codalina-frontend/components/ui/EmptyState.jsx",
+      "codalina-frontend/components/ui/Skeleton.jsx",
+      "codalina-frontend/components/ui/TechIcon.jsx",
+      "codalina-frontend/components/ui/ToastProvider.jsx",
+      "codalina-frontend/components/ui/VerificationBadge.jsx",
+      "codalina-frontend/components/{134497E9-F77D-40C8-8A3B-95254C30EEEA}.png"
+    ],
+    "frontend_other": [
+      "codalina-frontend/public/audio.png",
+      "codalina-frontend/public/codalina-logo.png",
+      "codalina-frontend/public/cube-svgrepo-com.svg",
+      "codalina-frontend/public/cursor-svgrepo-com (1).svg",
+      "codalina-frontend/public/dashboard-svgrepo-com.svg",
+      "codalina-frontend/public/email-svgrepo-com.svg",
+      "codalina-frontend/public/engineer-config-svgrepo-com.svg",
+      "codalina-frontend/public/european-name-badge-svgrepo-com.svg",
+      "codalina-frontend/public/eye-show-svgrepo-com.svg",
+      "codalina-frontend/public/field-16-svgrepo-com.svg",
+      "codalina-frontend/public/geeoo-banner.jpg",
+      "codalina-frontend/public/geeoo-logo-new.png",
+      "codalina-frontend/public/geeoo-logo.jpg",
+      "codalina-frontend/public/geeoo-rainy-banner.jpg",
+      "codalina-frontend/public/github-142-svgrepo-com.svg",
+      "codalina-frontend/public/google-svgrepo-com.svg",
+      "codalina-frontend/public/icons/categories/charger.png",
+      "codalina-frontend/public/icons/categories/music.png",
+      "codalina-frontend/public/icons/categories/neckband.png",
+      "codalina-frontend/public/icons/categories/power-bank.png",
+      "codalina-frontend/public/icons/categories/smart-watch.png",
+      "codalina-frontend/public/icons/categories/smart.png",
+      "codalina-frontend/public/icons/categories/usb-cable.png",
+      "codalina-frontend/public/icons8-h-50.png",
+      "codalina-frontend/public/instagram-svgrepo-com.svg",
+      "codalina-frontend/public/llms.txt",
+      "codalina-frontend/public/lock-svgrepo-com.svg",
+      "codalina-frontend/public/login-svgrepo-com.svg",
+      "codalina-frontend/public/logo.png",
+      "codalina-frontend/public/painting-art-svgrepo-com.svg",
+      "codalina-frontend/public/personal-page-svgrepo-com.svg",
+      "codalina-frontend/public/powerbank.jpg",
+      "codalina-frontend/public/profile-svgrepo-com.svg",
+      "codalina-frontend/public/settings-minimalistic-svgrepo-com.svg",
+      "codalina-frontend/public/template-16-svgrepo-com.svg",
+      "codalina-frontend/public/text-size-svgrepo-com.svg",
+      "codalina-frontend/public/twitter-154-svgrepo-com.svg",
+      "codalina-frontend/public/watch.png",
+      "codalina-frontend/public/website-page-web-svgrepo-com.svg",
+      "codalina-frontend/public/{8B747CA7-04DD-4AF0-8E37-94675739456C}.png"
+    ]
+  },
+  "audit_results": {
+    ".gitignore": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:27.975Z"
+    },
+    "API_DOCUMENTATION.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:27.975Z"
+    },
+    "ARCHITECTURE.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:27.975Z"
+    },
+    "CODE_SAMPLES.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.859Z"
+    },
+    "DEPLOYMENT.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.859Z"
+    },
+    "FEATURES.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.859Z"
+    },
+    "README.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.859Z"
+    },
+    "SKILLS.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.859Z"
+    },
+    "codalina-backend/config/challengeMulter.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.168Z"
+    },
+    "codalina-backend/config/chatMediaMulter.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.230Z"
+    },
+    "codalina-backend/config/constants.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.293Z"
+    },
+    "codalina-backend/config/db.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.355Z"
+    },
+    "codalina-backend/config/index.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.418Z"
+    },
+    "codalina-backend/config/marketMulter.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.480Z"
+    },
+    "codalina-backend/config/multer.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.543Z"
+    },
+    "codalina-backend/config/quickPostMulter.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.605Z"
+    },
+    "codalina-backend/config/redis.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.671Z"
+    },
+    "codalina-backend/config/submissionMulter.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.738Z"
+    },
+    "codalina-backend/middlewares/authMiddleware.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.601Z"
+    },
+    "codalina-backend/middlewares/rateLimiter.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.664Z"
+    },
+    "codalina-backend/middlewares/securityMiddleware.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.729Z"
+    },
+    "codalina-backend/middlewares/trackMiddleware.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.794Z"
+    },
+    "codalina-backend/middlewares/validate.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.859Z"
+    },
+    "codalina-backend/middlewares/verifyAccessToken.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.922Z"
+    },
+    "codalina-backend/models/Chat.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.174Z"
+    },
+    "codalina-backend/models/CraftsmanProfile.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.559Z"
+    },
+    "codalina-backend/models/Event.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.685Z"
+    },
+    "codalina-backend/models/MarketBanner.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.008Z"
+    },
+    "codalina-backend/models/MarketCategory.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.072Z"
+    },
+    "codalina-backend/models/MarketConfig.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.135Z"
+    },
+    "codalina-backend/models/MarketOrder.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.199Z"
+    },
+    "codalina-backend/models/MarketOrderItem.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.262Z"
+    },
+    "codalina-backend/models/MarketProcurementRun.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.324Z"
+    },
+    "codalina-backend/models/MarketProduct.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.385Z"
+    },
+    "codalina-backend/models/MarketWholesaler.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.448Z"
+    },
+    "codalina-backend/models/MarketWholesalerTransaction.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.509Z"
+    },
+    "codalina-backend/models/Message.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.571Z"
+    },
+    "codalina-backend/models/Notification.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.633Z"
+    },
+    "codalina-backend/models/RefreshToken.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.951Z"
+    },
+    "codalina-backend/models/Session.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.136Z"
+    },
+    "codalina-backend/models/TokenTransaction.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.263Z"
+    },
+    "codalina-backend/models/Transaction.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.324Z"
+    },
+    "codalina-backend/models/User.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.387Z"
+    },
+    "codalina-backend/models/VerificationRequest.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.513Z"
+    },
+    "codalina-backend/models/Visitor.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.582Z"
+    },
+    "codalina-backend/controllers/authController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.804Z"
+    },
+    "codalina-backend/controllers/chatController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.868Z"
+    },
+    "codalina-backend/controllers/imageUploadController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.930Z"
+    },
+    "codalina-backend/controllers/marketBannerController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.993Z"
+    },
+    "codalina-backend/controllers/marketCategoryController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.057Z"
+    },
+    "codalina-backend/controllers/marketConfigController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.119Z"
+    },
+    "codalina-backend/controllers/marketOrderController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.181Z"
+    },
+    "codalina-backend/controllers/marketProcurementController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.243Z"
+    },
+    "codalina-backend/controllers/marketProductController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.306Z"
+    },
+    "codalina-backend/controllers/marketWholesalerController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.383Z"
+    },
+    "codalina-backend/controllers/notificationController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.469Z"
+    },
+    "codalina-backend/controllers/oauthController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.533Z"
+    },
+    "codalina-backend/controllers/tokenController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.596Z"
+    },
+    "codalina-backend/controllers/userController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.659Z"
+    },
+    "codalina-backend/controllers/verificationController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.722Z"
+    },
+    "codalina-backend/controllers/walletController.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.786Z"
+    },
+    "codalina-backend/routes/authRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.367Z"
+    },
+    "codalina-backend/routes/chatRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.430Z"
+    },
+    "codalina-backend/routes/imageUploadRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.553Z"
+    },
+    "codalina-backend/routes/marketRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.615Z"
+    },
+    "codalina-backend/routes/notificationRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.677Z"
+    },
+    "codalina-backend/routes/oauthRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.739Z"
+    },
+    "codalina-backend/routes/tokenRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.866Z"
+    },
+    "codalina-backend/routes/userRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.989Z"
+    },
+    "codalina-backend/routes/verificationRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.050Z"
+    },
+    "codalina-backend/routes/walletRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.115Z"
+    },
+    "codalina-backend/utils/amountParser.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.703Z"
+    },
+    "codalina-backend/utils/AppError.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.765Z"
+    },
+    "codalina-backend/utils/authLimiter.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.827Z"
+    },
+    "codalina-backend/utils/cache.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.891Z"
+    },
+    "codalina-backend/utils/cleanupTokens.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.956Z"
+    },
+    "codalina-backend/utils/enhancedFileValidator.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.019Z"
+    },
+    "codalina-backend/utils/fastValidator.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.084Z"
+    },
+    "codalina-backend/utils/fileValidator.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.147Z"
+    },
+    "codalina-backend/utils/generateUsername.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.211Z"
+    },
+    "codalina-backend/utils/logger.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.275Z"
+    },
+    "codalina-backend/utils/normalizeEmail.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.351Z"
+    },
+    "codalina-backend/utils/notificationHelper.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.449Z"
+    },
+    "codalina-backend/utils/redisClient.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.512Z"
+    },
+    "codalina-backend/utils/socketManager.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.574Z"
+    },
+    "codalina-backend/utils/telemetryBuffer.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.637Z"
+    },
+    "codalina-backend/queues/chatMediaQueue.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.726Z"
+    },
+    "codalina-backend/queues/chatMessageQueue.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.793Z"
+    },
+    "codalina-backend/queues/index.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.865Z"
+    },
+    "codalina-backend/queues/notificationQueue.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.929Z"
+    },
+    "codalina-backend/services/auth.service.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.893Z"
+    },
+    "codalina-backend/services/cloudinary.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.956Z"
+    },
+    "codalina-backend/services/email.service.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.018Z"
+    },
+    "codalina-backend/services/fileSystem.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.082Z"
+    },
+    "codalina-backend/services/localFileSystem.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.145Z"
+    },
+    "codalina-backend/services/SchemaRegistryService.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.207Z"
+    },
+    "codalina-backend/.env": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:27.976Z"
+    },
+    "codalina-backend/.gitignore": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:27.977Z"
+    },
+    "codalina-backend/cat-log.txt": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:27.977Z"
+    },
+    "codalina-backend/check_db.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.105Z"
+    },
+    "codalina-backend/craftsmen/chatMediaWorker.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.848Z"
+    },
+    "codalina-backend/craftsmen/chatMessageWorker.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.913Z"
+    },
+    "codalina-backend/craftsmen/index.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:29.975Z"
+    },
+    "codalina-backend/craftsmen/notificationWorker.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.039Z"
+    },
+    "codalina-backend/craftsmen/profileImageWorker.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.101Z"
+    },
+    "codalina-backend/debug_images.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.163Z"
+    },
+    "codalina-backend/docs/VIEW_HISTORY_FIX.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.163Z"
+    },
+    "codalina-backend/docs/VIEW_TRACKING_SYSTEM.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.163Z"
+    },
+    "codalina-backend/extractWorking.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.226Z"
+    },
+    "codalina-backend/fix-demo-titles.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.288Z"
+    },
+    "codalina-backend/fix_earnings_atlas.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.350Z"
+    },
+    "codalina-backend/get_admin.cjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.412Z"
+    },
+    "codalina-backend/get_admin.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.476Z"
+    },
+    "codalina-backend/list_collections.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.539Z"
+    },
+    "codalina-backend/package-lock.json": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-backend/package.json": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.582Z"
+    },
+    "codalina-backend/practiceserver.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.655Z"
+    },
+    "codalina-backend/prisma.config.ts": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.655Z"
+    },
+    "codalina-backend/remove_h1_title_script.mjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.993Z"
+    },
+    "codalina-backend/rename.cjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.056Z"
+    },
+    "codalina-backend/rename2.cjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.118Z"
+    },
+    "codalina-backend/reset_admin.cjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.181Z"
+    },
+    "codalina-backend/run-all.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.177Z"
+    },
+    "codalina-backend/scripts/addPerformanceIndexes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.238Z"
+    },
+    "codalina-backend/scripts/addSearchIndexes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.302Z"
+    },
+    "codalina-backend/scripts/check-cat.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.364Z"
+    },
+    "codalina-backend/scripts/checkCardShapes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.429Z"
+    },
+    "codalina-backend/scripts/checkViewHistory.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.497Z"
+    },
+    "codalina-backend/scripts/cleanupLegacyArrays.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.562Z"
+    },
+    "codalina-backend/scripts/cleanup_search_spam.mjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.625Z"
+    },
+    "codalina-backend/scripts/clean_search.mjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.690Z"
+    },
+    "codalina-backend/scripts/deleteDemoData.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.753Z"
+    },
+    "codalina-backend/scripts/diagnose.mjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.815Z"
+    },
+    "codalina-backend/scripts/diagnose2.mjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.884Z"
+    },
+    "codalina-backend/scripts/diagnose_search.mjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:35.945Z"
+    },
+    "codalina-backend/scripts/fix-password.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.007Z"
+    },
+    "codalina-backend/scripts/fix404Image.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.071Z"
+    },
+    "codalina-backend/scripts/fixMissingImages.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.133Z"
+    },
+    "codalina-backend/scripts/generate-usernames.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.195Z"
+    },
+    "codalina-backend/scripts/migrate-redis-url.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.256Z"
+    },
+    "codalina-backend/scripts/migrateArrays.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.318Z"
+    },
+    "codalina-backend/scripts/migrateCardShapes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.380Z"
+    },
+    "codalina-backend/scripts/patch-ioredis-instantiations.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.442Z"
+    },
+    "codalina-backend/scripts/patch-ioredis.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.504Z"
+    },
+    "codalina-backend/scripts/patch-redis-connections.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.566Z"
+    },
+    "codalina-backend/scripts/patch-workers.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.628Z"
+    },
+    "codalina-backend/scripts/README.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.628Z"
+    },
+    "codalina-backend/scripts/refactor-workers.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.690Z"
+    },
+    "codalina-backend/scripts/repair-redis.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.752Z"
+    },
+    "codalina-backend/scripts/reset-attempts.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.814Z"
+    },
+    "codalina-backend/scripts/resetUserAccount.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.877Z"
+    },
+    "codalina-backend/scripts/seed-audio-categories.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:36.939Z"
+    },
+    "codalina-backend/scripts/seed-craftsman.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.002Z"
+    },
+    "codalina-backend/scripts/seedDemoData.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.066Z"
+    },
+    "codalina-backend/scripts/seedMultipleCraftsmen.cjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.129Z"
+    },
+    "codalina-backend/scripts/seedSuperUser.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.193Z"
+    },
+    "codalina-backend/scripts/seo-bulk-update.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.258Z"
+    },
+    "codalina-backend/scripts/test-redis-options.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.320Z"
+    },
+    "codalina-backend/scripts/test-redis-url.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.383Z"
+    },
+    "codalina-backend/scripts/testAPI.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.445Z"
+    },
+    "codalina-backend/scripts/testNotifications.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.510Z"
+    },
+    "codalina-backend/scripts/testOptimizations.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.574Z"
+    },
+    "codalina-backend/scripts/testViewHistory.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.638Z"
+    },
+    "codalina-backend/scripts/trainMLModels.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.704Z"
+    },
+    "codalina-backend/scripts/wipeData.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.767Z"
+    },
+    "codalina-backend/server.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:37.829Z"
+    },
+    "codalina-backend/test-chat-routes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.269Z"
+    },
+    "codalina-backend/test-db.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.331Z"
+    },
+    "codalina-backend/test.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.393Z"
+    },
+    "codalina-backend/test_sanitize.mjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.517Z"
+    },
+    "codalina-backend/test_sanitize_full.mjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.579Z"
+    },
+    "codalina-backend/update_excerpts.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.641Z"
+    },
+    "codalina-backend/validation/authValidation.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.699Z"
+    },
+    "codalina-backend/validation/craftsmanValidation.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.761Z"
+    },
+    "codalina-backend/validation/trackSchemas.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.823Z"
+    },
+    "codalina-frontend/.env.local": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.823Z"
+    },
+    "codalina-frontend/.gitignore": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.824Z"
+    },
+    "codalina-frontend/cleanup-urls.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.830Z"
+    },
+    "codalina-frontend/eslint.config.mjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.854Z"
+    },
+    "codalina-frontend/fixSockets.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.854Z"
+    },
+    "codalina-frontend/jsconfig.json": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.855Z"
+    },
+    "codalina-frontend/middleware.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.855Z"
+    },
+    "codalina-frontend/next.config.mjs": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.855Z"
+    },
+    "codalina-frontend/package-lock.json": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/package.json": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.855Z"
+    },
+    "codalina-frontend/postcss.config.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.855Z"
+    },
+    "codalina-frontend/README.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.855Z"
+    },
+    "codalina-frontend/repair-admin-syntax.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.855Z"
+    },
+    "codalina-frontend/repair-envs.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.856Z"
+    },
+    "codalina-frontend/repair-syntax.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.856Z"
+    },
+    "codalina-frontend/tailwind.config.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.856Z"
+    },
+    "codalina-frontend/topic.md": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.856Z"
+    },
+    "codalina-frontend/context/LanguageContext.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.854Z"
+    },
+    "codalina-frontend/context/ThemeContext.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.854Z"
+    },
+    "codalina-frontend/context/UserContext.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.854Z"
+    },
+    "codalina-frontend/hooks/useDebounce.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.854Z"
+    },
+    "codalina-frontend/hooks/useFavorites.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.854Z"
+    },
+    "codalina-frontend/hooks/useShare.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.855Z"
+    },
+    "codalina-frontend/utils/AdvancedTracker.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.856Z"
+    },
+    "codalina-frontend/utils/animations.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.856Z"
+    },
+    "codalina-frontend/utils/api.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.856Z"
+    },
+    "codalina-frontend/utils/bdData.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.857Z"
+    },
+    "codalina-frontend/utils/blogExport.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.857Z"
+    },
+    "codalina-frontend/utils/DataExport.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.857Z"
+    },
+    "codalina-frontend/utils/generateInvoice.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.857Z"
+    },
+    "codalina-frontend/utils/jwt.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.857Z"
+    },
+    "codalina-frontend/utils/optimizeImage.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.858Z"
+    },
+    "codalina-frontend/utils/socket.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.858Z"
+    },
+    "codalina-frontend/utils/TrackerEngine.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.858Z"
+    },
+    "codalina-frontend/utils/translations.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.858Z"
+    },
+    "codalina-frontend/utils/visitor.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.858Z"
+    },
+    "codalina-frontend/utils/webrtcManager.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.858Z"
+    },
+    "codalina-frontend/app/(dashboard)/analytics/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.824Z"
+    },
+    "codalina-frontend/app/(dashboard)/cart/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.824Z"
+    },
+    "codalina-frontend/app/(dashboard)/chat/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.824Z"
+    },
+    "codalina-frontend/app/(dashboard)/checkout/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.824Z"
+    },
+    "codalina-frontend/app/(dashboard)/explore/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-07-31T06:31:06.657Z"
+    },
+    "codalina-frontend/app/(dashboard)/layout.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.824Z"
+    },
+    "codalina-frontend/app/(dashboard)/legal/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.825Z"
+    },
+    "codalina-frontend/app/(dashboard)/loading.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-07-31T06:31:06.658Z"
+    },
+    "codalina-frontend/app/(dashboard)/orders/[id]/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.825Z"
+    },
+    "codalina-frontend/app/(dashboard)/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.825Z"
+    },
+    "codalina-frontend/app/(dashboard)/privacy/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.825Z"
+    },
+    "codalina-frontend/app/(dashboard)/product/[id]/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.825Z"
+    },
+    "codalina-frontend/app/(dashboard)/search/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-07-31T06:31:06.659Z"
+    },
+    "codalina-frontend/app/(dashboard)/sitemap/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.825Z"
+    },
+    "codalina-frontend/app/(dashboard)/terms/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.825Z"
+    },
+    "codalina-frontend/app/(dashboard)/u/[username]/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.826Z"
+    },
+    "codalina-frontend/app/(dashboard)/warranty/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.826Z"
+    },
+    "codalina-frontend/app/about/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.826Z"
+    },
+    "codalina-frontend/app/admin/market/banners/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.826Z"
+    },
+    "codalina-frontend/app/admin/market/categories/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.826Z"
+    },
+    "codalina-frontend/app/admin/market/featured/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.826Z"
+    },
+    "codalina-frontend/app/admin/market/layout.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.826Z"
+    },
+    "codalina-frontend/app/admin/market/orders/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.827Z"
+    },
+    "codalina-frontend/app/admin/market/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.827Z"
+    },
+    "codalina-frontend/app/admin/market/popular/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.827Z"
+    },
+    "codalina-frontend/app/admin/market/procurement/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.827Z"
+    },
+    "codalina-frontend/app/admin/market/products/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.827Z"
+    },
+    "codalina-frontend/app/admin/market/promotions/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.827Z"
+    },
+    "codalina-frontend/app/admin/market/wholesaler/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.827Z"
+    },
+    "codalina-frontend/app/admin/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.828Z"
+    },
+    "codalina-frontend/app/admin/users/[id]/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.828Z"
+    },
+    "codalina-frontend/app/admin/verification/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.828Z"
+    },
+    "codalina-frontend/app/admin/verification/[id]/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.828Z"
+    },
+    "codalina-frontend/app/api/ai/chat/route.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.828Z"
+    },
+    "codalina-frontend/app/api/ai/generate/route.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.828Z"
+    },
+    "codalina-frontend/app/auth/callback/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.828Z"
+    },
+    "codalina-frontend/app/auth/forgot-password/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.828Z"
+    },
+    "codalina-frontend/app/auth/login/layout.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.829Z"
+    },
+    "codalina-frontend/app/auth/login/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.829Z"
+    },
+    "codalina-frontend/app/auth/register/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.829Z"
+    },
+    "codalina-frontend/app/auth/reset-password/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.829Z"
+    },
+    "codalina-frontend/app/auth/verify-email/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.829Z"
+    },
+    "codalina-frontend/app/editor-fonts.css": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.829Z"
+    },
+    "codalina-frontend/app/globals.css": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.829Z"
+    },
+    "codalina-frontend/app/inbox/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.830Z"
+    },
+    "codalina-frontend/app/layout.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.830Z"
+    },
+    "codalina-frontend/app/loading.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-07-31T06:31:06.664Z"
+    },
+    "codalina-frontend/app/robots.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.830Z"
+    },
+    "codalina-frontend/app/scan/layout.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.830Z"
+    },
+    "codalina-frontend/app/scan/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.830Z"
+    },
+    "codalina-frontend/app/sitemap.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.830Z"
+    },
+    "codalina-frontend/app/user/no-access/page.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.830Z"
+    },
+    "codalina-frontend/components/AboutComponents/AboutMain.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.831Z"
+    },
+    "codalina-frontend/components/admin/MarketPromotionsForm.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.831Z"
+    },
+    "codalina-frontend/components/AdminComponents/AccountTypeStats.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.831Z"
+    },
+    "codalina-frontend/components/AdminComponents/AllCountriesBarChart.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.831Z"
+    },
+    "codalina-frontend/components/AdminComponents/LastLoginTable.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.831Z"
+    },
+    "codalina-frontend/components/AdminComponents/LiveEvents.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.831Z"
+    },
+    "codalina-frontend/components/AdminComponents/NewVsRepeated.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.831Z"
+    },
+    "codalina-frontend/components/AdminComponents/PagePopularityDetails.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.831Z"
+    },
+    "codalina-frontend/components/AdminComponents/PagePopularitySmaller.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.832Z"
+    },
+    "codalina-frontend/components/AdminComponents/ProjectDisputes.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.832Z"
+    },
+    "codalina-frontend/components/AdminComponents/ReferrerStatsChart.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.832Z"
+    },
+    "codalina-frontend/components/AdminComponents/Task/TaskLayout.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.832Z"
+    },
+    "codalina-frontend/components/AdminComponents/test.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.832Z"
+    },
+    "codalina-frontend/components/AdminComponents/UnifiedAdminDashboard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.832Z"
+    },
+    "codalina-frontend/components/AdminComponents/UserDirectory.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.832Z"
+    },
+    "codalina-frontend/components/AdminComponents/UserIntelligenceHub.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.833Z"
+    },
+    "codalina-frontend/components/AdminComponents/VerificationRequests.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.833Z"
+    },
+    "codalina-frontend/components/AdminComponents/VisitorDevicePieChart.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.833Z"
+    },
+    "codalina-frontend/components/AIEnhanceButton.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.833Z"
+    },
+    "codalina-frontend/components/Auth/AuthContainer.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.833Z"
+    },
+    "codalina-frontend/components/Auth/SocialAuth.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.833Z"
+    },
+    "codalina-frontend/components/Background.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.833Z"
+    },
+    "codalina-frontend/components/BetaBanner.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.834Z"
+    },
+    "codalina-frontend/components/Buttons/SignInButton.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.834Z"
+    },
+    "codalina-frontend/components/Buttons/SignUpButton.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.834Z"
+    },
+    "codalina-frontend/components/Card/card.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.834Z"
+    },
+    "codalina-frontend/components/Card/maincar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.834Z"
+    },
+    "codalina-frontend/components/Card/ProfileCard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.834Z"
+    },
+    "codalina-frontend/components/Card/ProjectCard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.834Z"
+    },
+    "codalina-frontend/components/ClickedButtonGradient.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.834Z"
+    },
+    "codalina-frontend/components/dashboard/analytics/CreatorAnalytics.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.835Z"
+    },
+    "codalina-frontend/components/dashboard/AuthenticatedHome.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.835Z"
+    },
+    "codalina-frontend/components/dashboard/cards/ClassicExploreCard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.835Z"
+    },
+    "codalina-frontend/components/dashboard/cards/CraftsmanHoverCard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.835Z"
+    },
+    "codalina-frontend/components/dashboard/cards/PostCard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.835Z"
+    },
+    "codalina-frontend/components/dashboard/cards/SavedItemCard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.835Z"
+    },
+    "codalina-frontend/components/dashboard/chat/CallInterface.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.835Z"
+    },
+    "codalina-frontend/components/dashboard/chat/ChatModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.836Z"
+    },
+    "codalina-frontend/components/dashboard/chat/ChatSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.836Z"
+    },
+    "codalina-frontend/components/dashboard/chat/ChatWindow.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.836Z"
+    },
+    "codalina-frontend/components/dashboard/chat/DraggableResizableWindow.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.836Z"
+    },
+    "codalina-frontend/components/dashboard/comments/AdvancedCommentSection.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.836Z"
+    },
+    "codalina-frontend/components/dashboard/community/ActivityFeed.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.836Z"
+    },
+    "codalina-frontend/components/dashboard/community/CollaborationRooms.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.836Z"
+    },
+    "codalina-frontend/components/dashboard/community/CommunityChat.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.836Z"
+    },
+    "codalina-frontend/components/dashboard/community/CommunityMain.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.837Z"
+    },
+    "codalina-frontend/components/dashboard/community/CreateDiscussionModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.837Z"
+    },
+    "codalina-frontend/components/dashboard/community/CreatePostModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.837Z"
+    },
+    "codalina-frontend/components/dashboard/community/CreatorDiscovery.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.837Z"
+    },
+    "codalina-frontend/components/dashboard/community/DiscussionChat.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.837Z"
+    },
+    "codalina-frontend/components/dashboard/community/DiscussionChatNew.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.837Z"
+    },
+    "codalina-frontend/components/dashboard/community/ResourceLibrary.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.837Z"
+    },
+    "codalina-frontend/components/dashboard/community/TaskBoard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.838Z"
+    },
+    "codalina-frontend/components/dashboard/explore/ExploreDashboard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.838Z"
+    },
+    "codalina-frontend/components/dashboard/explore/ExploreFeed.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.838Z"
+    },
+    "codalina-frontend/components/dashboard/explore/ExploreRightPanel.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.838Z"
+    },
+    "codalina-frontend/components/dashboard/GlassNavbar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.838Z"
+    },
+    "codalina-frontend/components/dashboard/GlobalSocketListener.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.838Z"
+    },
+    "codalina-frontend/components/dashboard/market/MarketClientView.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.838Z"
+    },
+    "codalina-frontend/components/dashboard/market/MarketFooter.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.839Z"
+    },
+    "codalina-frontend/components/dashboard/market/MarketNavbar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.839Z"
+    },
+    "codalina-frontend/components/dashboard/market/MarketSEOContent.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.839Z"
+    },
+    "codalina-frontend/components/dashboard/market/MobileMarketBottomNav.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.839Z"
+    },
+    "codalina-frontend/components/dashboard/market/WhyChooseUs.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.839Z"
+    },
+    "codalina-frontend/components/dashboard/modals/CraftsmanProfileModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.839Z"
+    },
+    "codalina-frontend/components/dashboard/modals/MentorshipBookingModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.839Z"
+    },
+    "codalina-frontend/components/dashboard/modals/SaveNoteModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.839Z"
+    },
+    "codalina-frontend/components/dashboard/modals/UserOnboardingModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.839Z"
+    },
+    "codalina-frontend/components/dashboard/navbar/SearchSuggestions.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.840Z"
+    },
+    "codalina-frontend/components/dashboard/NotificationDropdown.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.840Z"
+    },
+    "codalina-frontend/components/dashboard/notifications/NotificationModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.840Z"
+    },
+    "codalina-frontend/components/dashboard/RightSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.840Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/AchievementsSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.840Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/ArtifactRightSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.840Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/ArtifactsListSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.840Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/ChallengeCreateSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.841Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/ChallengeDetailsSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.841Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/ChallengesSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.841Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/ChallengeSubmitSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.841Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/CodexListSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.841Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/CodexRightSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.841Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/CraftsmanSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.841Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/DevlogRightSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.841Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/DevlogsListSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.842Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/ExploreSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.842Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/JobDetailSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.842Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/JobTalentRightSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.842Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/ManageChallengesSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.842Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/ManageJobsSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.842Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/PostJobSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.842Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/ProposalDetailSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.842Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/ProposalsSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.843Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/VerifySidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.843Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/WalletRightSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.843Z"
+    },
+    "codalina-frontend/components/dashboard/sidebar/WorkspaceSidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.843Z"
+    },
+    "codalina-frontend/components/dashboard/Sidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.843Z"
+    },
+    "codalina-frontend/components/dashboard/TieredVerification.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.843Z"
+    },
+    "codalina-frontend/components/dashboard/ui/DiscussionBadges.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.843Z"
+    },
+    "codalina-frontend/components/dashboard/VerificationBanner.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.843Z"
+    },
+    "codalina-frontend/components/dashboard/VerificationForm.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.843Z"
+    },
+    "codalina-frontend/components/dashboard/ViewToolbar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.844Z"
+    },
+    "codalina-frontend/components/DashboardComponents/AnalyticsModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.844Z"
+    },
+    "codalina-frontend/components/DashboardComponents/ArtifactAnalyticsModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.844Z"
+    },
+    "codalina-frontend/components/DashboardComponents/BecomePatronModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.844Z"
+    },
+    "codalina-frontend/components/DashboardComponents/ChallengeDetailsModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.844Z"
+    },
+    "codalina-frontend/components/DashboardComponents/CraftsmanAccountModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.844Z"
+    },
+    "codalina-frontend/components/DashboardComponents/CraftsmanArtifactsGrid.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.844Z"
+    },
+    "codalina-frontend/components/DashboardComponents/CraftsmanDashboard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.845Z"
+    },
+    "codalina-frontend/components/DashboardComponents/CraftsmanProfileModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.845Z"
+    },
+    "codalina-frontend/components/DashboardComponents/CreateCraftsmanAccount.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.845Z"
+    },
+    "codalina-frontend/components/DashboardComponents/DashboardMain.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.845Z"
+    },
+    "codalina-frontend/components/DashboardComponents/DashboardModals.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.845Z"
+    },
+    "codalina-frontend/components/DashboardComponents/DashboardWidgets.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.845Z"
+    },
+    "codalina-frontend/components/DashboardComponents/ImageUploadModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.845Z"
+    },
+    "codalina-frontend/components/DashboardComponents/PatronDashboard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.845Z"
+    },
+    "codalina-frontend/components/DashboardComponents/PlatformDashboard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.846Z"
+    },
+    "codalina-frontend/components/DashboardComponents/PostAnalyticsModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.846Z"
+    },
+    "codalina-frontend/components/DashboardComponents/ProfileModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.846Z"
+    },
+    "codalina-frontend/components/DashboardComponents/SettingsModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.846Z"
+    },
+    "codalina-frontend/components/DemoCard/DemoCard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.846Z"
+    },
+    "codalina-frontend/components/FeaturedProfiles.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.846Z"
+    },
+    "codalina-frontend/components/FeaturedRow.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.846Z"
+    },
+    "codalina-frontend/components/FolderSelector.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.846Z"
+    },
+    "codalina-frontend/components/FolderSelector.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.847Z"
+    },
+    "codalina-frontend/components/Form/Devlog/BasicsSection.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.847Z"
+    },
+    "codalina-frontend/components/Form/Devlog/LinksSection.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.847Z"
+    },
+    "codalina-frontend/components/Form/Devlog/MetadataSection.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.847Z"
+    },
+    "codalina-frontend/components/Form/Devlog/MilestonesSection.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.847Z"
+    },
+    "codalina-frontend/components/Form/Devlog/TimelineSection.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.847Z"
+    },
+    "codalina-frontend/components/Form/ProjectUploadForm.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.847Z"
+    },
+    "codalina-frontend/components/Form/RegisterForm.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.847Z"
+    },
+    "codalina-frontend/components/Form/RegisterRevenueCard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.847Z"
+    },
+    "codalina-frontend/components/Form/UploadForm.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.848Z"
+    },
+    "codalina-frontend/components/Form.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.848Z"
+    },
+    "codalina-frontend/components/GlobalTracker.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.848Z"
+    },
+    "codalina-frontend/components/HomeComponents/CategoryPills.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.848Z"
+    },
+    "codalina-frontend/components/HomeComponents/ContentCard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.848Z"
+    },
+    "codalina-frontend/components/HomeComponents/DribbbleGrid.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.848Z"
+    },
+    "codalina-frontend/components/HomeComponents/HeroSection.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.848Z"
+    },
+    "codalina-frontend/components/HomeComponents/HomeMain.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.848Z"
+    },
+    "codalina-frontend/components/HomeComponents/RoadMap.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.849Z"
+    },
+    "codalina-frontend/components/HomeComponents/Sidebar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.849Z"
+    },
+    "codalina-frontend/components/HomeComponents/TopRightIcons.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.849Z"
+    },
+    "codalina-frontend/components/HomeComponents/VideoCard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.849Z"
+    },
+    "codalina-frontend/components/InboxComponents/InboxMain.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.849Z"
+    },
+    "codalina-frontend/components/InnerDiv.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.849Z"
+    },
+    "codalina-frontend/components/Input/CheckBox.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.849Z"
+    },
+    "codalina-frontend/components/Input/SocialButtons.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.850Z"
+    },
+    "codalina-frontend/components/InteractiveCharts.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.850Z"
+    },
+    "codalina-frontend/components/landing/CTA.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.850Z"
+    },
+    "codalina-frontend/components/landing/Features.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.850Z"
+    },
+    "codalina-frontend/components/landing/Footer.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.850Z"
+    },
+    "codalina-frontend/components/landing/Hero.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.850Z"
+    },
+    "codalina-frontend/components/landing/LandingNavbar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.850Z"
+    },
+    "codalina-frontend/components/landing/LandingPage.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.850Z"
+    },
+    "codalina-frontend/components/landing/Testimonials.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.850Z"
+    },
+    "codalina-frontend/components/Layout.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.851Z"
+    },
+    "codalina-frontend/components/LiveAnalyticsCards.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.851Z"
+    },
+    "codalina-frontend/components/MainCursor.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.851Z"
+    },
+    "codalina-frontend/components/modals/CraftsmanOnboardingModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.851Z"
+    },
+    "codalina-frontend/components/navigation/MobileBottomNav.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.851Z"
+    },
+    "codalina-frontend/components/NotificationsComponents/NotificationsMain.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.851Z"
+    },
+    "codalina-frontend/components/Onboarding/OnboardingWizard.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.851Z"
+    },
+    "codalina-frontend/components/orders/OrdersList.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.851Z"
+    },
+    "codalina-frontend/components/ProfileComponents/PublicProfile.backup.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.852Z"
+    },
+    "codalina-frontend/components/ProfileComponents/PublicProfile.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.852Z"
+    },
+    "codalina-frontend/components/salesChart.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.852Z"
+    },
+    "codalina-frontend/components/SearchComponents/SearchMain.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.852Z"
+    },
+    "codalina-frontend/components/seo/JsonLd.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.852Z"
+    },
+    "codalina-frontend/components/ShowOff/ButtonShowOff.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.852Z"
+    },
+    "codalina-frontend/components/ThemeToggle.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.852Z"
+    },
+    "codalina-frontend/components/TrackerPatron.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.852Z"
+    },
+    "codalina-frontend/components/ui/AuthGuardModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.853Z"
+    },
+    "codalina-frontend/components/ui/AuthRequired.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.853Z"
+    },
+    "codalina-frontend/components/ui/CameraCapture.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.853Z"
+    },
+    "codalina-frontend/components/ui/CustomSelect.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.853Z"
+    },
+    "codalina-frontend/components/ui/EmptyState.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.853Z"
+    },
+    "codalina-frontend/components/ui/Skeleton.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.853Z"
+    },
+    "codalina-frontend/components/ui/TechIcon.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.853Z"
+    },
+    "codalina-frontend/components/ui/ToastProvider.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.853Z"
+    },
+    "codalina-frontend/components/ui/VerificationBadge.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.853Z"
+    },
+    "codalina-frontend/constants/cardShapes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.854Z"
+    },
+    "codalina-frontend/constants/features.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.854Z"
+    },
+    "codalina-frontend/public/llms.txt": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.855Z"
+    },
+    "codalina-frontend/scripts/apply-optimizations.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.856Z"
+    },
+    "codalina-backend/dev.db": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-backend/uploads/market/market_1784994104390_o424bg9bz.jpg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/app/(dashboard)/shop/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.825Z"
+    },
+    "codalina-frontend/app/favicon.ico": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/components/dashboard/{08B81150-9B90-48C6-AB85-212C3A8614AA}.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/components/DashboardComponents/{E58D8B53-B89D-4D90-85E9-B815AB4327BE}.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/components/DashboardComponents/{F971547E-CD74-4121-9D2A-7F526CAB1D6B}.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/components/DashboardComponents/{FC46394F-B442-46A2-8A97-521402F3D84E}.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/components/{134497E9-F77D-40C8-8A3B-95254C30EEEA}.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/audio.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/codalina-logo.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/cube-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/cursor-svgrepo-com (1).svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/dashboard-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/email-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/engineer-config-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/european-name-badge-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/eye-show-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/field-16-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/geeoo-banner.jpg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/geeoo-logo-new.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/geeoo-logo.jpg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/geeoo-rainy-banner.jpg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/github-142-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/google-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/icons8-h-50.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/instagram-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/lock-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/login-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/logo.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/painting-art-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/personal-page-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/powerbank.jpg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/profile-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/settings-minimalistic-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/template-16-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/text-size-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/twitter-154-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/watch.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/website-page-web-svgrepo-com.svg": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "codalina-frontend/public/{8B747CA7-04DD-4AF0-8E37-94675739456C}.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": []
+    },
+    "AUDIT_PROGRESS.json": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:27.976Z"
+    },
+    "codalina-backend/models/Artifact.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:30.984Z"
+    },
+    "codalina-backend/models/AuditLog.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.046Z"
+    },
+    "codalina-backend/models/Challenge.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.108Z"
+    },
+    "codalina-backend/models/Codex.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.237Z"
+    },
+    "codalina-backend/models/CollaborationRoom.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.301Z"
+    },
+    "codalina-backend/models/Comment.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.364Z"
+    },
+    "codalina-backend/models/CommunityTask.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.428Z"
+    },
+    "codalina-backend/models/Contract.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.492Z"
+    },
+    "codalina-backend/models/Discussion.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.621Z"
+    },
+    "codalina-backend/models/Follow.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.747Z"
+    },
+    "codalina-backend/models/FollowHistory.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.811Z"
+    },
+    "codalina-backend/models/Interaction.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.874Z"
+    },
+    "codalina-backend/models/Job.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:31.938Z"
+    },
+    "codalina-backend/models/Payout.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.695Z"
+    },
+    "codalina-backend/models/PlatformProfile.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.761Z"
+    },
+    "codalina-backend/models/Post.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.826Z"
+    },
+    "codalina-backend/models/PredictiveAnalytics.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:32.889Z"
+    },
+    "codalina-backend/models/Resource.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.013Z"
+    },
+    "codalina-backend/models/Sale.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.075Z"
+    },
+    "codalina-backend/models/SocialActivity.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.200Z"
+    },
+    "codalina-backend/models/UserJourney.model.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:33.449Z"
+    },
+    "codalina-backend/routes/analytics.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.243Z"
+    },
+    "codalina-backend/routes/artifacts.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.305Z"
+    },
+    "codalina-backend/routes/devlogRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.491Z"
+    },
+    "codalina-backend/routes/saleRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.801Z"
+    },
+    "codalina-backend/routes/trackRoutes.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:34.928Z"
+    },
+    "codalina-frontend/components/AdminComponents/PieChartArtifact.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.832Z"
+    },
+    "codalina-frontend/components/AdminComponents/VisitorAccountPieChart.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.833Z"
+    },
+    "codalina-frontend/components/Card/HomeArtifact.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.834Z"
+    },
+    "codalina-frontend/components/HomeComponents/Navbar.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.849Z"
+    },
+    "codalina-backend/check-admins.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:28.043Z"
+    },
+    "codalina-backend/test_cats.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:38.455Z"
+    },
+    "codalina-frontend/.eslintrc.json": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.824Z"
+    },
+    "codalina-frontend/app/admin/messages/page.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.828Z"
+    },
+    "codalina-frontend/categories.json": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.830Z"
+    },
+    "codalina-frontend/components/dashboard/FeedbackModal.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.838Z"
+    },
+    "codalina-frontend/components/GlobalTransitionLoader.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.848Z"
+    },
+    "codalina-frontend/components/ui/AppleSpinner.jsx": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.852Z"
+    },
+    "codalina-frontend/replace_loaders.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.856Z"
+    },
+    "codalina-frontend/utils/suspenseCache.js": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:39.858Z"
+    },
+    "codalina-frontend/public/icons/categories/charger.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:23.832Z"
+    },
+    "codalina-frontend/public/icons/categories/music.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:23.832Z"
+    },
+    "codalina-frontend/public/icons/categories/neckband.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:23.832Z"
+    },
+    "codalina-frontend/public/icons/categories/power-bank.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:23.832Z"
+    },
+    "codalina-frontend/public/icons/categories/smart-watch.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:23.832Z"
+    },
+    "codalina-frontend/public/icons/categories/smart.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:23.832Z"
+    },
+    "codalina-frontend/public/icons/categories/usb-cable.png": {
+      "status": "PASS",
+      "issues_count": 0,
+      "issues": [],
+      "last_audited": "2026-08-01T07:01:23.832Z"
+    }
+  },
+  "summary": {
+    "total_files": 538,
+    "pass": 485,
+    "warning": 0,
+    "fail": 0,
+    "completion_percentage": 90
+  }
+}
