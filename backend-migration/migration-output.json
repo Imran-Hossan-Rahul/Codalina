@@ -1,0 +1,34 @@
+{
+  "runAt": "2026-09-24T16:17:23.834Z",
+  "dryRun": false,
+  "database": "test",
+  "collection": "marketproducts",
+  "matched": 74,
+  "modified": 74,
+  "fieldsAdded": [
+    "productType",
+    "licenseType",
+    "demoUrl",
+    "documentationUrl",
+    "techStack",
+    "fileFormat",
+    "fileSize",
+    "version",
+    "changelog",
+    "downloadUrl",
+    "screenshotGallery"
+  ],
+  "deprecatedFields": [
+    "weight",
+    "dimensions",
+    "procurement_threshold",
+    "est_delivery_days",
+    "reportedStockQuantity",
+    "warranty_info",
+    "return_policy",
+    "wholesaler_id",
+    "weightInGrams",
+    "delivery_charge"
+  ],
+  "note": "Physical-era fields (weight, dimensions, etc.) preserved on existing documents for order history compatibility."
+}
